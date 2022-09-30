@@ -1,0 +1,48 @@
+//Header
+
+
+.header {
+
+    //NAVIGATION
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 4rem 3rem;
+    }
+
+
+    &__ul {
+        display: none;
+    }
+
+
+    &__li {
+
+    }
+
+
+    //HERO IMAGE
+
+
+    //HERO CONTENT
+
+    &--primary {
+        display: flex;
+        flex-direction: column;
+        text-align: center; //temporary
+        margin-bottom: 3rem;
+        font-size: 3rem;
+        
+        span {
+            letter-spacing: .1rem;
+        }
+    }
+
+    &--paragraph {
+        text-align: center; // temporary
+        margin: 0 auto 3rem;
+    }
+
+
+    margin-bottom: 20rem;
+}

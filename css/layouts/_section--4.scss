@@ -1,0 +1,11 @@
+//CTA
+
+.section {
+    &--input {
+        &-box {
+          background-color: $softBlue;  
+          color: $white;
+          padding: 7rem 0;
+        }
+    }
+}

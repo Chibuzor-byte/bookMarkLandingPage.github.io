@@ -1,0 +1,114 @@
+.mr {
+    margin-right: 2rem;
+    
+}
+
+.m-auto {
+    margin: 0 auto;
+}
+
+//MARGIN TOP
+
+.m-xsmall-top {
+    margin-top: 3rem;
+}
+
+.m-top {
+    margin-top: 6rem;
+}
+
+//BOTTOM
+.m-xsmall-bottom {
+    margin-bottom: .5rem;
+}
+
+.m-bottom {
+    margin-bottom: 2rem;
+}
+
+
+.m-small-bottom {
+    margin-bottom: 10rem;
+}
+
+
+.m-big-bottom {
+    margin-bottom: 20rem;
+}
+
+
+//PADDING 
+
+.padding {
+    &--extension {
+        padding: 1.5rem 4rem;
+    }
+
+    &--hero {
+        padding: 1.5rem 1rem;
+    }
+
+    &--faq {
+        padding: 1.5rem 2.5rem;
+    }
+
+
+    &--input {
+        padding: 1.5rem 3rem;
+    }
+}
+
+
+
+
+
+// TEXT ALIGN
+.text-center {
+    text-align: center;
+}
+
+.click {
+    cursor: pointer;
+}
+
+// FLEX
+
+.flex {
+    display: flex;
+    &-fd {
+
+        &-r {
+            flex-direction: row;
+        }
+
+
+        &-c {
+            flex-direction: column;
+        }
+    }
+
+    &-jc {
+        &-sb {
+            justify-content: space-between;
+        } 
+    }
+}
+
+
+//WIDTH
+
+.width-80 {
+    width: 80%;
+}
+
+
+//BORDER
+
+.border--r {
+    border-radius: .5rem;
+}
+
+
+.border--bottom {
+    border-bottom: 2px solid $grayishBlue;
+}

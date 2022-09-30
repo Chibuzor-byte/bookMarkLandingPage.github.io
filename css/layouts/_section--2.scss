@@ -1,1 +1,16 @@
-//Extensions
+//Extensions & CARD
+
+.card {
+    background-color: $white;
+    box-shadow: 0 2px 2px 5px rgba($softBlue, .1);
+    border-radius: 1rem;
+    width: 78%;
+    padding: 7rem 2rem 1rem;
+    height: 360px;
+
+    background-image: url('../../../images/bg-dots.svg');
+    background-position: 0 270px;
+    background-repeat: repeat-x;
+
+    margin-bottom: 10rem; // tempo
+}
