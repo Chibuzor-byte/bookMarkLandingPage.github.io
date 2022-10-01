@@ -110,5 +110,16 @@
 
 
 .border--bottom {
-    border-bottom: 2px solid $grayishBlue;
+    border-bottom: 2px solid rgba($grayishBlue,.5);
+}
+
+
+.border--top {
+    border-top: 2px solid rgba($grayishBlue,.8);
+
+}
+
+
+.none {
+    display: none;
 }

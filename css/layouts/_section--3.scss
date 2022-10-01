@@ -6,6 +6,14 @@
         &-box {
             margin-bottom: 15rem;   
         }  
+
+        margin: 0 auto 3rem;
+        font-size: 1.4rem;
+
+        &__content {
+            max-height: 0;
+            overflow: hidden;
+        }
         
     }
 }
