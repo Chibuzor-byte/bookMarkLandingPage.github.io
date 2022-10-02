@@ -55,6 +55,10 @@
 
     &--input {
         padding: 1.5rem 3rem;
+
+        &-para {
+            padding: .5rem 1rem;
+        }
     }
 }
 
@@ -65,6 +69,14 @@
 // TEXT ALIGN
 .text-center {
     text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
 }
 
 .click {
@@ -101,11 +113,15 @@
     width: 80%;
 }
 
+.width-90 {
+    width: 90%;
+}
+
 
 //BORDER
 
 .border--r {
-    border-radius: .5rem;
+    border-radius: .4rem;
 }
 
 

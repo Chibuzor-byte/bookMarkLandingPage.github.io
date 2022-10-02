@@ -18,6 +18,11 @@
 </head>
 <body>
 
+  <section class="header__active-nav">
+    <p>okay</p>
+  </section>
+
+
 
   <header class="header">
 
@@ -40,9 +45,17 @@
       
     </nav>
 
+    <!-- active nav -->
+
+    
 
     <section class="header__hero">
       <!-- IMAGE -->
+
+      <div class="header__hero--image-box">
+        <img src="images/illustration-hero.svg" alt="illustration-hero " class="header__hero--image">
+
+      </div>
 
 
       <div class="header__hero--content">
@@ -233,9 +246,13 @@
       <span class="font--size-6">we're doing</span>
     </h3>
 
-    <form action="#" class="section--input width-80 m-auto text-center flex flex-fd-c">
-      <input type="email" placeholder="Enter your email address" name="email" class="padding--input border--r m-bottom" id="email__input">
-      <button class="btn btn--red font--white padding--input">Contact Us</button>
+    <form action="#" class="section--input width-90  m-auto text-center flex flex-fd-c">
+      <div class="border--r bg--red">
+        <input type="email" placeholder="Enter your email address" name="email" class="email__input border--r" id="email__input">
+        <p class="error padding--input-para text-left font--size-1-input font--space-1-input font--italics-1"></p>  
+        <p><img src="images/icon-error.svg" alt="Error" class="email__input--error"></p>
+      </div>      
+      <button class="btn email__input-btn btn--red font--white t">Contact Us</button>
     </form>
   </section>
 
@@ -364,5 +381,6 @@
   </footer> -->
 </body>
 
-<script src="app/app.js"></script>
+<script src="app/faq.js"></script>
+<script src="app/input.js"></script>
 </html>

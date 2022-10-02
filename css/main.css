@@ -42,9 +42,20 @@
 .padding--input {
   padding: 1.5rem 3rem;
 }
+.padding--input-para {
+  padding: 0.5rem 1rem;
+}
 
 .text-center {
   text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .click {
@@ -68,8 +79,12 @@
   width: 80%;
 }
 
+.width-90 {
+  width: 90%;
+}
+
 .border--r {
-  border-radius: 0.5rem;
+  border-radius: 0.4rem;
 }
 
 .border--bottom {
@@ -163,6 +178,9 @@ input::placeholder {
   font-size: 1.5rem;
   width: 83%;
 }
+.font--size-1-input {
+  font-size: 1rem;
+}
 .font--size-1 {
   font-size: 1.25rem;
 }
@@ -181,6 +199,9 @@ input::placeholder {
 .font--size-6 {
   font-size: 2.4rem;
 }
+.font--space-1-input {
+  letter-spacing: 0.1rem;
+}
 .font--space-1 {
   letter-spacing: 0.2rem;
 }
@@ -196,6 +217,9 @@ input::placeholder {
 .font--opacity-1 {
   opacity: 0.9;
 }
+.font--italics-1 {
+  font-style: italic;
+}
 
 .footer {
   padding: 3rem 0;
@@ -208,10 +232,34 @@ input::placeholder {
 .header__nav {
   display: flex;
   justify-content: space-between;
-  margin: 4rem 3rem;
+  margin: 4rem 3rem 18rem;
 }
 .header__ul {
   display: none;
+}
+.header__hero--image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 30%;
+  left: 5px;
+}
+.header__hero--image-box {
+  background-color: hsl(231deg, 69%, 60%);
+  margin-bottom: 10rem;
+  height: 200px;
+  margin-left: 26.666667%;
+  margin-right: 0;
+  border-top-left-radius: 30rem;
+  border-bottom-left-radius: 30rem;
+}
+.header__active-nav {
+  position: absolute;
+  z-index: 1000;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(37, 43, 70, 0.1);
+  top: 3px;
 }
 .header--primary {
   display: flex;
@@ -235,7 +283,7 @@ input::placeholder {
   width: 78%;
   padding: 7rem 2rem 1rem;
   height: 360px;
-  background-image: url("./../../images/bg-dots.svg");
+  background-image: url(./../../images/bg-dots.svg);
   background-position: 0 270px;
   background-repeat: repeat-x;
   margin-bottom: 10rem;
@@ -257,4 +305,30 @@ input::placeholder {
   background-color: hsl(231deg, 69%, 60%);
   color: hsl(0deg, 0%, 100%);
   padding: 7rem 0;
+}
+
+.email__input {
+  padding: 1rem;
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+}
+.email__input-box {
+  background-color: hsl(0deg, 94%, 66%);
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 0.15rem;
+  position: relative;
+}
+.email__input-btn {
+  width: inherit;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 1rem 5rem;
+}
+.email__input--error {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  display: none;
 }/*# sourceMappingURL=main.css.map */

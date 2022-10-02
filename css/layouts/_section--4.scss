@@ -9,3 +9,41 @@
         }
     }
 }
+
+
+.email {
+  &__input {
+      // display: inline-block;
+      padding: 1rem;
+      display: block;
+      width: 300px;
+      margin: 0 auto;
+
+      &-box {
+        background-color: $softRed;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        padding: .15rem;
+
+
+        position: relative;
+      }
+
+      &-btn {
+        width: inherit;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 1rem 5rem;
+
+      }
+
+
+      &--error {
+        position: absolute;
+
+        top: 7px;
+        right: 10px;
+        display: none;
+      }
+  }
+}
