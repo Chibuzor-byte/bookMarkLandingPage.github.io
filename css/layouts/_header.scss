@@ -2,7 +2,7 @@
 
 
 .header {
-
+    opacity: 0.5;
     //NAVIGATION
     &__nav {
         display: flex;
@@ -53,13 +53,19 @@
     }
 
     &__active-nav {
-        position: absolute;
+        position: fixed;
+        top: 0;
         z-index: 1000;
         height: 100vh;
         width: 100vw;
-        background-color: rgba($veryDarkBlue, .1);
-        top: 3px;
+        background-color: rgba($veryDarkBlue, .8);
+        // background-color: #000;
+        color: white;
     }
+
+    // &__z-index {
+    //     z-index: -1;
+    // }
 
 
     //HERO CONTENT
