@@ -3,4 +3,46 @@
 .footer {
     padding: 3rem 0;
     background-color: $veryDarkBlue;
+
+    &-box {
+        @media screen and (min-width: 800px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+
+    &__link {
+        a {
+            margin-bottom: 2.5rem;
+
+            @media screen and (min-width: 800px) {
+                margin-bottom: 0;
+
+            }
+        }
+
+        &--a {
+            @media screen and (min-width: 800px) {
+                margin-right: 2rem;
+
+            }
+
+            &:hover {
+                color: $softRed;
+            }
+        }
+
+    
+    }
+
+
+    &--icon {
+        &:hover {
+            fill: red;
+            transition: all .5s;
+        }
+    }
+
+    
 }

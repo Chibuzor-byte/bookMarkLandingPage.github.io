@@ -17,3 +17,11 @@
         
     }
 }
+
+
+.click {
+    &:hover {
+        color: $softRed;
+        transition: all .5s;
+    }
+}

@@ -13,4 +13,31 @@
     background-repeat: repeat-x;
 
     margin-bottom: 10rem; // tempo
+
+    &--1 {
+        @media screen and (min-width: 1200px) {
+            
+        }  
+    }
+
+    &--2 {
+        @media screen and (min-width: 1200px) {
+            margin-top: 5rem;
+        }
+    }
+
+    &--3 {
+        @media screen and (min-width: 1200px) {
+            margin-top: 10rem;
+        }
+    }
+
+    &-box {
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            max-width: 1000px;
+        }
+    }
+
+    
 }

@@ -10,9 +10,12 @@
         color: $white;
     }
 
+    &--red {
+        color: $softRed;
+    }
+
     &--grey {
         color: $grayishBlue;
-        width: 90%;
         line-height: 1.5;
 
         &-c {
@@ -78,6 +81,10 @@
         &-u {
             text-transform: uppercase;
         }
+
+        &-c {
+            text-transform: capitalize;
+        }
         
     }
 
@@ -89,7 +96,7 @@
 
     &--opacity {
         &-1 {
-            opacity: 0.9;
+            opacity: 0.5;
         }
     }
 

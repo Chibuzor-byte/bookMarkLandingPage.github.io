@@ -34,6 +34,11 @@
     margin-bottom: 8rem;
 }
 
+.m-bottom-10 {
+    margin-bottom: 10rem;
+}
+
+
 .m-bottom-14 {
     margin-bottom: 14rem;
 }
@@ -61,6 +66,10 @@
     }
 
     &--faq {
+        padding: 1.5rem 2.5rem;
+    }
+
+    &--login {
         padding: 1.5rem 2.5rem;
     }
 
@@ -129,6 +138,26 @@
 
         &-c {
             flex-direction: column;
+
+            &-input {
+                flex-direction: column;
+
+                @media screen and (min-width: 700px) {
+                    flex-direction: row;
+                }
+            }
+
+            &-footer {
+                flex-direction: column;
+                @media screen and (min-width: 800px) {
+                    flex-direction: row;
+                    
+                    align-items: center;
+
+                    
+
+                }
+            }
         }
     }
 
@@ -151,6 +180,10 @@
     display: inline-block;
 }
 
+.block {
+    display: block;
+}
+
 
 //WIDTH
 
@@ -160,6 +193,31 @@
 
 .width-90 {
     width: 90%;
+}
+
+.max-width-750 {
+    max-width: 750px;
+}
+
+.max-width-800 {
+    max-width: 1000px;
+}
+
+.max-width-300 {
+    max-width: 300px;
+}
+
+.max-width-440 {
+    max-width: 440px;
+}
+
+.max-width-500 {
+    max-width: 500px;
+}
+
+
+.max-width-600 {
+    max-width: 600px;
 }
 
 
@@ -195,4 +253,16 @@
 
 .line-bottom {
     border-bottom: $lineBorder;
+}
+
+.line-tab {
+    border-top: $lineBorder;
+    width: 90%;
+}
+
+
+//BACKGROUND
+
+.bg--red-login {
+    background-color: $softRed;
 }

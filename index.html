@@ -20,8 +20,8 @@
 
   <section class="header__active-nav">
     <div class="active__logo-box flex flex-fd-r flex-ai-c flex-jc-sb">
-      <div><a href="#"><img src="images/logo-bookmark-active-nav.svg" alt="Logo" class="active__logo"></a></div>    
-      <div><a href="#"><img src="images/icon-close.svg" alt="Close"></a></div>
+      <div><a href="index.html"><img src="images/logo-bookmark-active-nav.svg" alt="Logo" class="active__logo"></a></div>    
+      <div><a href="#" class="close"><img src="images/icon-close.svg" alt="Close"></a></div>
     </div>
 
     <div class="active__menu flex flex-fd-c text-center ">
@@ -30,7 +30,7 @@
       <a href="#" class="line-top line-bottom padding__top--1 padding__bottom--2 inline-block  m-bottom-4 font--size-4 font--space-1 font--opacity-1 font--transform-u font--white">Contact</a>
     </div>
 
-    <div class="text-center active__cta m-bottom-14 border--r"><a href="#" class="font--white font--space-1">LOGIN</a></div>
+    <div class="text-center active__cta m-bottom-14 border--r"><a href="#" class="block font--white font--space-1">LOGIN</a></div>
 
 
     <div class="footer__social text-center">
@@ -43,21 +43,21 @@
 
   <header class="header">
 
-    <nav class="header__nav">
+    <nav class="header__nav m-auto width-80">
       <div class="logo-box">
         <a href="index.html" class="logo_link"><img src="images/logo-bookmark-blue.svg" alt="BookMark"></a>
       </div>
 
 
       <div class="logo-box">
-        <a href="index.html" class="hamburger_link"><img src="images/icon-hamburger.svg" alt="Menu"></a>
+        <a href="#" class="hamburger__link"><img src="images/icon-hamburger.svg" alt="Menu"></a>
       </div>
 
       <ul class="header__ul">
-        <li class="header__li"><a href="" class="header__link">Features</a></li>
-        <li class="header__li"><a href="" class="header__link">Pricing</a></li>
-        <li class="header__li"><a href="" class="header__link">Contact</a></li>
-        <li class="header__li"><a href="" class="header__link">Login</a></li>
+        <li class="header__li"><a href="#" class="header__link font--blue">Features</a></li>
+        <li class="header__li"><a href="#" class="header__link font--blue">Pricing</a></li>
+        <li class="header__li"><a href="#" class="header__link font--blue">Contact</a></li>
+        <li class="header__li"><a href="#" class="header__login font--white padding--login btn bg--red-login">Login</a></li>
       </ul>
       
     </nav>
@@ -67,7 +67,6 @@
     
 
     <section class="header__hero">
-      <!-- IMAGE -->
 
       <div class="header__hero--image-box">
         <img src="images/illustration-hero.svg" alt="illustration-hero " class="header__hero--image">
@@ -81,12 +80,12 @@
           <span>Manager</span>
         </h1>
 
-        <p class="font--grey font--paragraph header--paragraph">
+        <p class="font--grey width-90 font--paragraph header--paragraph">
           A clean and simple interface to organize your favourite websites. Open a new 
           browser tab and see your sites load instantly. Try it for free.
         </p>
 
-        <div class="btn__box">
+        <div class="btn__box btn__box--header">
           <a href="#" class="btn padding--hero mr font--white btn--blue">Get it on Chrome</a>
           <a href="#" class="btn padding--hero font--blue btn--grey">Get it on Firefox</a>
         </div>
@@ -95,9 +94,9 @@
   </header>
 
   <section class="section--features m-big-bottom">
-    <div class="section--features-box">
+    <div class="section--features-box m-bottom-8">
       <h2 class="font--blue m-bottom text-center">Features</h2>
-      <p class="font--grey m-auto font--paragraph text-center">Our aim is to make it quick and easy for you to access your favourite websites. 
+      <p class="font--grey width-90 max-width-440 m-auto font--paragraph text-center">Our aim is to make it quick and easy for you to access your favourite websites. 
         Your bookmarks sync between your devices so you can access them on the go.
       </p>
     </div>
@@ -105,70 +104,102 @@
 
     <!-- TAB -->
 
+    <div class="tab--link-box m-bottom-10 flex flex-fd-c text-center ">
+      <div class="btn--tab-box">
+        <button href="#" data-tab data-click class="line-tab  m-auto tab--link   btn--tab btn--tab-1 btn--tab-bookmark font--red inline-block padding__top--1 m-bottom font--size-4  font--transform-c">Simple Bookmarking</button>
+        <span class="btn--tab-span btn--tab-span-1"></span>
+      </div>
+
+      <div class="btn--tab-box">
+        <button href="#" data-tab data-click class="line-top m-auto  font--grey width-90 btn--tab btn--tab-2 btn--tab-speedy  inline-block padding__top--1 m-bottom font--size-4    font--transform-c">Speedy Searching</button>
+        <span class="btn--tab-span btn--tab-span-2"></span>  
+      </div>
+
+      <div class="btn--tab-box">
+        <button href="#" data-tab data-click class="line-top m-auto width-90  font--grey  btn--tab-easy btn--tab btn--tab-3 line-bottom padding__top--1 padding__bottom--2 inline-block  m-bottom-4 font--size-4   font--transform-c">Easy Sharing</button>
+        <span class="btn--tab-span btn--tab-span-3"></span>
+      </div>
+            
+    </div>
+
     <!-- BookMark in one click -->
+
+    <div class="tab-box">
+      <div class="tab--image-box">
+        <img data-image src="images/illustration-features-tab-1.svg" alt="illustration-Tab-1 " class="tab--image">
+      </div>
+
+        <div data-tab-content class="m-bottom-8">
+          <h2 data-tab-header class="font--blue m-bottom text-center">Bookmark in one click</h2>
+          <p data-tab-para class="font--grey width-90 m-auto font--paragraph text-center">
+            Organize your bookmarks however you like. Our simple drag-and-drop
+            interface gives you complete control over how you manage your favourite sites.
+          </p>
+        </div>
+    </div>
   </section>
 
 
   <section class="section--extention">
     <div class="section--extension-box m-small-bottom">
       <h2 class="font--blue m-bottom text-center">Download the extension</h2>
-      <p class="font--grey m-auto font--paragraph text-center">We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+      <p class="font--grey width-90 max-width-440 m-auto font--paragraph text-center">We’ve got more browsers in the pipeline. Please do let us know if you’ve 
         got a favourite you’d like us to prioritize.      
       </p>
     </div>
 
-    <section class="card-box">
-      <div class="card text-center m-auto">
+    <section class="card-box m-auto">
+      <div class="card card--1 max-width-300 text-center m-auto">
         <div class="m-bottom">
           <div class="m-bottom">
             <img src="images/logo-chrome.svg" alt="Chrome" class="card--img">
           </div>          
           <div>
             <h3 class="font--blue m-xsmall-bottom">Add to Chrome</h3>
-            <p class="font--grey m-auto font--size-1 font--space-1">Minimum version 62</p>
+            <p class="font--grey width-90 m-auto font--size-1 font--space-1">Minimum version 62</p>
           </div>  
           <div class="m-top">
             
             <div>
-              <a href="#" class="btn padding--extension btn--card btn--blue px font--white">Add & Install Extension</a>
+              <a href="#" class="btn btn--extension padding--extension btn--card btn--blue px font--white">Add & Install Extension</a>
             </div>          
           </div>
         </div>
       </div>
 
 
-      <div class="card text-center m-auto">
+      <div class="card card--2 max-width-300 text-center m-auto">
         <div class="m-bottom">
           <div class="m-bottom">
             <img src="images/logo-firefox.svg" alt="Firefox" class="card--img">
           </div>          
           <div>
             <h3 class="font--blue m-xsmall-bottom">Add to Firefox</h3>
-            <p class="font--grey m-auto font--size-1 font--space-1">Minimum version 55</p>
+            <p class="font--grey width-90 m-auto font--size-1 font--space-1">Minimum version 55</p>
           </div>  
           <div class="m-top">
             
             <div>
-              <a href="#" class="btn padding--extension btn--card btn--blue px font--white">Add & Install Extension</a>
+              <a href="#" class="btn btn--extension padding--extension btn--card btn--blue px font--white">Add & Install Extension</a>
             </div>          
           </div>
         </div>
       </div>
 
 
-      <div class="card text-center m-auto">
+      <div class="card card--3 max-width-300 text-center m-auto">
         <div class="m-bottom">
           <div class="m-bottom">
             <img src="images/logo-opera.svg" alt="opera" class="card--img">
           </div>          
           <div>
             <h3 class="font--blue m-xsmall-bottom">Add to Opera</h3>
-            <p class="font--grey m-auto font--size-1 font--space-1">Minimum version 46</p>
+            <p class="font--grey width-90 m-auto font--size-1 font--space-1">Minimum version 46</p>
           </div>  
           <div class="m-top">
             
             <div>
-              <a href="#" class="btn padding--extension btn--card btn--blue px font--white">Add & Install Extension</a>
+              <a href="#" class="btn btn--extension padding--extension btn--card btn--blue px font--white">Add & Install Extension</a>
             </div>          
           </div>
         </div>
@@ -185,13 +216,13 @@
         <span>Frequently Asked</span>
         <span>Questions</span> 
       </h2>
-      <p class="font--grey m-auto font--paragraph text-center">Here are some of our FAQs. If you have any other questions you’d like 
+      <p class="font--grey width-90 max-width-440 m-auto font--paragraph text-center">Here are some of our FAQs. If you have any other questions you’d like 
         answered please feel free to email us.
       </p>
     </div>
 
 
-    <section class="section--faq-box">
+    <section class="section--faq-box max-width-600 m-auto">
         <div class="section--faq width-80  m-auto">
           <div class=" flex flex-fd-r flex-jc-sb click m-bottom">
             <span>What is Bookmark?</span>
@@ -199,7 +230,7 @@
           </div>
 
           <div class="section--faq__content border--bottom">
-            <p class="font--grey section--faq__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+            <p class="font--grey width-90 section--faq__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
               justo eget ultricies frinwgilla. Phasellus blandit ipsum quis quam ornare mattis.
             </p>
           </div>
@@ -214,7 +245,7 @@
           </div>
 
           <div class="section--faq__content border--bottom">
-            <p class="font--grey section--faq__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+            <p class="font--grey width-90 section--faq__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
               justo eget ultricies frinwgilla. Phasellus blandit ipsum quis quam ornare mattis.
             </p>
           </div>
@@ -228,7 +259,7 @@
           </div>
 
           <div class="section--faq__content border--bottom">
-            <p class="font--grey section--faq__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+            <p class="font--grey width-90 section--faq__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
               justo eget ultricies frinwgilla. Phasellus blandit ipsum quis quam ornare mattis.
             </p>
           </div>
@@ -242,7 +273,7 @@
           </div>
 
           <div class="section--faq__content border--bottom">
-            <p class="font--grey section--faq__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+            <p class="font--grey width-90 section--faq__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
               justo eget ultricies frinwgilla. Phasellus blandit ipsum quis quam ornare mattis.
             </p>
           </div>
@@ -263,29 +294,32 @@
       <span class="font--size-6">we're doing</span>
     </h3>
 
-    <form action="#" class="section--input width-90  m-auto text-center flex flex-fd-c">
+    <form action="#" class="section--input max-width-600 width-90  m-auto text-center flex flex-fd-c-input">
       <div class="border--r bg--red">
         <input type="email" placeholder="Enter your email address" name="email" class="email__input border--r" id="email__input">
         <p class="error padding--input-para text-left font--size-1-input font--space-1-input font--italics-1"></p>  
         <p><img src="images/icon-error.svg" alt="Error" class="email__input--error"></p>
       </div>      
-      <button class="btn email__input-btn btn--red font--white t">Contact Us</button>
+      <button class="btn email__input-btn btn--red font--white">Contact Us</button>
     </form>
   </section>
 
 
   <footer class="footer">
-    <div class="footer__link text-center flex flex-fd-c m-xsmall-bottom">
-      <a href="#" class="m-bottom"><img src="images/logo-bookmark-white.svg" alt="Logo"></a>
-      <a href="#" class="m-bottom font--size-1 font--space-1 font--opacity-1 font--transform-u font--white">Features</a>
-      <a href="#" class="m-bottom font--size-1 font--space-1 font--opacity-1 font--transform-u font--white">Pricing</a>
-      <a href="#" class="m-bottom font--size-1 font--space-1 font--opacity-1 font--transform-u font--white">Contact</a>
+    <div class="width-80 footer-box m-auto">
+      <div class="footer__link text-center flex flex-fd-c-footer m-xsmall-bottom">
+        <a href="#" class="footer__link--a"><img src="images/logo-bookmark-white.svg" alt="Logo"></a>
+        <a href="#" class="footer__link--a font--size-1 font--space-1 font--opacity-1 font--transform-u font--white">Features</a>
+        <a href="#" class="footer__link--a font--size-1 font--space-1 font--opacity-1 font--transform-u font--white">Pricing</a>
+        <a href="#" class="footer__link--a font--size-1 font--space-1 font--opacity-1 font--transform-u font--white">Contact</a>
+      </div>
+  
+      <div class="footer__social text-center">
+        <a href="#"><img src="images/icon-facebook.svg" class="mr footer--icon" alt="Facebook"></a>
+        <a href="#"><img src="images/icon-twitter.svg" class="footer--icon" alt="Twitter"></a>
+      </div>
     </div>
-
-    <div class="footer__social text-center">
-      <a href="#"><img src="images/icon-facebook.svg" class="mr" alt="Facebook"></a>
-      <a href="#"><img src="images/icon-twitter.svg" alt="Twitter"></a>
-    </div>
+    
   </footer>
 
 
@@ -400,4 +434,6 @@
 
 <script src="app/faq.js"></script>
 <script src="app/input.js"></script>
+<script src="app/active-nav.js"></script>
+<script src="app/tab.js"></script>
 </html>
